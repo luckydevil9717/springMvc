@@ -11,8 +11,10 @@
     <packaging>war</packaging>
 
     <properties>
-        <spring.version>5.3.14</spring.version>
-    </properties>
+    <java.version>17</java.version>
+    <spring.version>5.3.14</spring.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
 
     <dependencies>
 
@@ -44,7 +46,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
-                    <version>2.4</version>
+                    <version>3.3.2</version>
                     <configuration>
                         <warSourceDirectory>src/webapp</warSourceDirectory>
                         <warName>spring_mvc</warName>
