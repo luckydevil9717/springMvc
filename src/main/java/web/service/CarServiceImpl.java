@@ -1,6 +1,7 @@
-package web.controller;
+package web.service;
 
 import org.springframework.stereotype.Service;
+import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +20,7 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public List<Car> getCars(int count) {
+    public List<Car> getCarsByCount(int count) {
         if (count >= cars.size() || count <= 0) {
             return cars;
         }
